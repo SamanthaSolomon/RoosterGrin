@@ -72,3 +72,6 @@ These required features are requested specifically by the client and should be i
   3. What you enjoyed the most and why
 
 If you have any questions please feel free to email me (Matt) at matt.sprague@roostergrin.com
+
+Notes for me:
+ - basic html structure
