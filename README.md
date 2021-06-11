@@ -76,4 +76,5 @@ If you have any questions please feel free to email me (Matt) at matt.sprague@ro
 Notes for me:
  - basic html structure
  - static css done today!
+ - custom content and links
  - animation done on Sunday/Monday
