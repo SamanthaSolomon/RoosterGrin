@@ -7,37 +7,27 @@ body {
 
 h1 {
   font-family: "Lato";
-  font-weight: 900px;
-  font-size: 5rem;
-  text-align: center;
-  color: none;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-}
-
-h2 {
-  font-family: "Lato";
   font-weight: 400px;
   font-size: 4rem;
   text-align: center;
   color: #ffffff;
 }
 
-h3 {
+h2 {
   font-family: "Lato";
   font-weight: 400px;
   font-size: 3rem;
   color: #800080;
 }
 
-h4 {
+h3 {
   font-family: "Lato";
   font-weight: 400px;
   font-size: 3rem;
   color: #3d3d3d;
 }
 
-h5 {
+h4 {
   font-family: "Lato";
   font-weight: 400px;
   font-size: 1.5rem;
@@ -67,17 +57,18 @@ header img:first-of-type {
   position: relative;
 }
 
-header h1 {
+header svg {
   position: absolute;
   top: 48%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  text-transform: uppercase;
 }
 
-header h2 {
+header h1 {
   position: absolute;
-  top: 60%;
+  top: 58%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -87,6 +78,7 @@ header button {
   border: none;
   background-color: #800080;
   color: #ffffff;
+  font-weight: bold;
   padding: 1% 2%;
   text-transform: uppercase;
   margin: 15px;
@@ -95,6 +87,12 @@ header button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+header button:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 3px solid #ffffff;
 }
 
 header img:last-of-type {

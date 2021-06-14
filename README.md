@@ -80,3 +80,6 @@ Notes for me:
 
  credits
   - css tricks blog
+
+new things
+creating an svg for the welcome to text to achieve the transparent effect

@@ -2,20 +2,24 @@ header{
     img:first-of-type{
         position: relative;
     }
-    h1{
+    
+    svg{
         position: absolute;
         top: 48%;
         left: 50%;
         transform: translate(-50%, -50%);
+        text-transform: uppercase;
     }
-    h2{
+
+    h1{
         position: absolute;
-        top: 60%;
+        top: 58%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     button{
         @include squareButton($purple);
+        @include buttonHover(transparent, $white, $white);
         position: absolute;
         top: 70%;
         left: 50%;
