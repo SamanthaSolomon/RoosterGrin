@@ -1,0 +1,68 @@
+//LAYOUT
+
+body{
+    width: 100%;
+    align-content: center;
+}
+
+//HEADERS + PARA
+h1{
+    font-family: $Lato;
+    font-weight: $heavy;
+    font-size: 5rem;
+    text-align: center;
+    color: none;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    background-color: black;
+}
+
+h2{
+    font-family: $Lato;
+    font-weight: $normal;
+    font-size: 4rem;
+    text-align: center;
+    color: $white;
+    background-color: black;
+}
+
+h3{
+    font-family: $Lato;
+    font-weight: $normal;
+    font-size: 3rem;
+    color:$purple;
+}
+
+h4{
+    font-family: $Lato;
+    font-weight: $normal;
+    font-size: 3rem;
+    color: $grey;
+}
+
+h5{
+    font-family: $Lato;
+    font-weight: $normal;
+    font-size: 1.5rem;
+    color: $purple;
+    text-align: center;
+}
+
+p{
+    font-family: $Lato;
+    font-weight: $light;
+    color: $grey;
+    font-size: 1rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    font-family: $Lato;
+    font-weight: $normal;
+    color: $grey;
+    font-size: 1rem;
+}
+
