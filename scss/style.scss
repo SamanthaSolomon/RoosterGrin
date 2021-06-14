@@ -1,18 +1,9 @@
-@import './header';
+//PARTIAL SCSS
 @import './variables';
 @import './mixins';
+@import './base';
+
+@import 'bootstrap/scss/bootstrap.scss';
 
 
-//base styles
 
-h1{
-    font-family: $Lato;
-    font-weight: $heavy;
-    font-size: 4rem;
-}
-
-h2{
-    font-family: $Lato;
-    font-weight: $normal;
-    font-size: 3rem;
-}
