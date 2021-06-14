@@ -30,7 +30,8 @@
         grid-row-end: 2;
         justify-self: center;
         align-self: center;
-        padding-left: 20%;
+        padding-left: 25%;
+        padding-right: 15%;
     }
     .right{
         grid-column-start: 2;
@@ -40,3 +41,25 @@
         justify-self: end;
     }
 }
+
+@mixin imgOverlay {
+    .two{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        h2 {
+            position: absolute;
+            top: 30%;
+            right: 50%;
+        }
+    }
+    
+    
+    
+}
+

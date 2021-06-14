@@ -1,0 +1,9 @@
+.two{
+    @include imgOverlay();
+    button{
+        @include squareButton($orange);
+        @include buttonHover(transparent, $orange, $orange);
+    }
+    
+
+}
