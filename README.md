@@ -76,4 +76,7 @@ If you have any questions please feel free to email me (Matt) at matt.sprague@ro
 Notes for me:
  - static css done today!
  - custom content and links
- - animation done on Sunday/Monday
+ - animation done on 
+
+ credits
+  - css tricks blog

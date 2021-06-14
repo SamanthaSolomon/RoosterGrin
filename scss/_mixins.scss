@@ -1,0 +1,8 @@
+@mixin squareButton($background-color){
+    border: none;
+    background-color: $background-color;
+    color: $white;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    margin: 15px;
+}

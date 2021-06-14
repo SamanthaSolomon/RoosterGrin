@@ -13,7 +13,6 @@ h1 {
   color: none;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  background-color: black;
 }
 
 h2 {
@@ -22,7 +21,6 @@ h2 {
   font-size: 4rem;
   text-align: center;
   color: #ffffff;
-  background-color: black;
 }
 
 h3 {
@@ -63,5 +61,46 @@ li {
   font-weight: 400px;
   color: #3d3d3d;
   font-size: 1rem;
+}
+
+header img:first-of-type {
+  position: relative;
+}
+
+header h1 {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header h2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header button {
+  border: none;
+  background-color: #800080;
+  color: #ffffff;
+  padding: 1% 2%;
+  text-transform: uppercase;
+  margin: 15px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header img:last-of-type {
+  position: absolute;
+  top: 5%;
+  left: 13%;
+  max-width: 20%;
 }
 /*# sourceMappingURL=style.css.map */
