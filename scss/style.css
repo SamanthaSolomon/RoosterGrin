@@ -8,7 +8,7 @@ body {
 h1 {
   font-family: "Lato";
   font-weight: 400px;
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   color: #ffffff;
 }
@@ -55,6 +55,7 @@ li {
 
 header img:first-of-type {
   position: relative;
+  width: 100%;
 }
 
 header svg {
@@ -79,9 +80,10 @@ header button {
   background-color: #800080;
   color: #ffffff;
   font-weight: bold;
-  padding: 1% 2%;
+  padding: 1% 2.5%;
   text-transform: uppercase;
   margin: 15px;
+  font-size: 1.3rem;
   position: absolute;
   top: 70%;
   left: 50%;
@@ -100,5 +102,41 @@ header img:last-of-type {
   top: 5%;
   left: 13%;
   max-width: 20%;
+}
+
+.one {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.one .left {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 20%;
+}
+
+.one .right {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 /*# sourceMappingURL=style.css.map */
