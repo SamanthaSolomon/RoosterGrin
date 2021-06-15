@@ -151,7 +151,7 @@ header img:last-of-type {
 }
 
 .one .right img {
-  height: 650px;
+  height: 475px;
 }
 
 .two {
@@ -167,8 +167,8 @@ header img:last-of-type {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-105%, -50%);
-          transform: translate(-105%, -50%);
+  -webkit-transform: translate(-90%, -50%);
+          transform: translate(-90%, -50%);
 }
 
 .two button {
@@ -288,11 +288,12 @@ header img:last-of-type {
 }
 
 .four .content-block {
+  width: 35%;
   position: absolute;
   top: 50%;
   right: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(110%, -50%);
+          transform: translate(110%, -50%);
 }
 
 .four button {
@@ -304,11 +305,56 @@ header img:last-of-type {
   text-transform: uppercase;
   margin: 15px;
   font-size: 1.3rem;
+  padding: 4% 5%;
 }
 
 .four button:hover {
   background-color: transparent;
-  color: #ffffff;
-  border: 3px solid #ffffff;
+  color: #800080;
+  border: 3px solid #800080;
+}
+
+.five {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.five .left {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 25%;
+  padding-right: 15%;
+}
+
+.five .right {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+footer {
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */
