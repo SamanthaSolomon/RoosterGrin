@@ -30,15 +30,31 @@ nextButton.addEventListener('click', e => {
     //Get current slide and next slide
     const currentSlide = track.querySelector('.current-slide')
     const nextSlide = currentSlide.nextElementSibling
+    //call moveSlide
     moveSlide(track, currentSlide, nextSlide)
 
 })
 
 //CLICK LEFT ARROW, MOVE SLIDES TO LEFT
 prevButton.addEventListener('click', e => {
+    //Get current slide and next slide
     const currentSlide = track.querySelector('.current-slide')
     const prevSlide = currentSlide.previousElementSibling
+    //call moveSlide
     moveSlide(track, currentSlide, prevSlide)
 })
 
 //CLICK INDICATOR, MOVE TO THAT SLIDE
+dotNav.addEventListener('click', e => {
+    //which indicator clicked
+    const targetDot = e.target.closest('button')
+    //end function if targetDot is NOT clicked
+    if (!targetDot) return
+   //get current slide, current dot and associated dot and slide index
+    const currentSlide = track.querySelector('.current-slide')
+    const currentDot = dotNav.querySelector('.current-slide')
+    const targetIndex = dots.findIndex(dot => dot === targetDot)
+    const targetSlide = slides[targetIndex]
+    //call moveSlide
+    moveSlide(track, currentSlide, targetSlide)
+})
