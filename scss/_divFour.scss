@@ -1,0 +1,14 @@
+.four{
+    @include wideImgDiv();
+    .content-block{
+        width: 35%;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+    button{
+        @include squareButton($purple);
+        @include buttonHover(transparent, $white, $white);
+    }  
+}

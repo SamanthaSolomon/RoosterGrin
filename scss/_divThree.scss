@@ -1,0 +1,37 @@
+.three{
+    width: 100%;
+    @include twoColumnGrid(center);
+    .right{
+        background-color: $backgroundAccent;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        .icon{
+            margin-left: 3%;
+            padding: 8%;
+            flex-grow: 1;
+            flex-basis: 16%;
+            p{
+                text-align: left;
+                margin-top: 5%;
+                padding-left: 3%;
+                text-transform: uppercase;
+            }
+            .border{
+                border: 2px solid $purple;
+                border-radius: 90px;
+                padding: 20px;
+                img{
+                    width: 100px;
+                    align-content: center;
+                }
+            }
+        }
+        
+
+    }
+
+}

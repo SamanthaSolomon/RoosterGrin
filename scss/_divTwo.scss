@@ -1,8 +1,16 @@
 .two{
-    @include imgOverlay();
+    @include wideImgDiv;
+    }
+    .content-block{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-105%, -50%);
+    }
     button{
         @include squareButton($orange);
         @include buttonHover(transparent, $orange, $orange);
+        padding: 4% 5%;
     }
     
 

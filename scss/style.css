@@ -3,6 +3,8 @@ body {
   width: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -18,6 +20,7 @@ h2 {
   font-weight: 400px;
   font-size: 3rem;
   color: #800080;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -25,6 +28,9 @@ h3 {
   font-weight: 400px;
   font-size: 3rem;
   color: #3d3d3d;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 h4 {
@@ -56,6 +62,7 @@ li {
 header img:first-of-type {
   position: relative;
   width: 100%;
+  height: 100%;
 }
 
 header svg {
@@ -69,18 +76,18 @@ header svg {
 
 header h1 {
   position: absolute;
-  top: 58%;
+  top: 48%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 header button {
-  border: none;
+  border: 3px solid #800080;
   background-color: #800080;
   color: #ffffff;
   font-weight: bold;
-  padding: 1% 2.5%;
+  padding: 1.5% 2.5%;
   text-transform: uppercase;
   margin: 15px;
   font-size: 1.3rem;
@@ -105,6 +112,8 @@ header img:last-of-type {
 }
 
 .one {
+  padding: 0;
+  margin: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -141,38 +150,165 @@ header img:last-of-type {
       justify-self: end;
 }
 
-.two .two {
+.one .right img {
+  height: 650px;
+}
+
+.two {
+  width: 100%;
   position: relative;
-  display: inline-block;
+}
+
+.two img {
   width: 100%;
 }
 
-.two .two img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.two .two h2 {
+.two .content-block {
   position: absolute;
-  top: 30%;
-  right: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-105%, -50%);
+          transform: translate(-105%, -50%);
 }
 
 .two button {
-  border: none;
+  border: 3px solid #ff8c00;
   background-color: #ff8c00;
   color: #ffffff;
   font-weight: bold;
-  padding: 1% 2.5%;
+  padding: 1.5% 2.5%;
   text-transform: uppercase;
   margin: 15px;
   font-size: 1.3rem;
+  padding: 4% 5%;
 }
 
 .two button:hover {
   background-color: transparent;
   color: #ff8c00;
   border: 3px solid #ff8c00;
+}
+
+.three {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.three .left {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 25%;
+  padding-right: 15%;
+}
+
+.three .right {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.three .right {
+  background-color: #f8f8f9;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.three .right .icon {
+  margin-left: 3%;
+  padding: 8%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 16%;
+      flex-basis: 16%;
+}
+
+.three .right .icon p {
+  text-align: left;
+  margin-top: 5%;
+  padding-left: 3%;
+  text-transform: uppercase;
+}
+
+.three .right .icon .border {
+  border: 2px solid #800080;
+  border-radius: 90px;
+  padding: 20px;
+}
+
+.three .right .icon .border img {
+  width: 100px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.four {
+  width: 100%;
+  position: relative;
+}
+
+.four img {
+  width: 100%;
+}
+
+.four .content-block {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.four button {
+  border: 3px solid #800080;
+  background-color: #800080;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1.5% 2.5%;
+  text-transform: uppercase;
+  margin: 15px;
+  font-size: 1.3rem;
+}
+
+.four button:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 3px solid #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
