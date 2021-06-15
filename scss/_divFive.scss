@@ -1,4 +1,12 @@
 .five{
-    width: 100%;
     @include twoColumnGrid(center);
+    width: 100%;
+    #stars{
+        margin-top: 5%;
+        .fa-star{
+            color: $orange;
+            font-size: 1.3rem;
+            margin: 1%;
+        }
+    }
 }

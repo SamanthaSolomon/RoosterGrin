@@ -315,7 +315,6 @@ header img:last-of-type {
 }
 
 .five {
-  width: 100%;
   padding: 0;
   margin: 0;
   display: -ms-grid;
@@ -324,6 +323,7 @@ header img:last-of-type {
       grid-template-columns: 50% 50%;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  width: 100%;
   width: 100%;
 }
 
@@ -352,6 +352,16 @@ header img:last-of-type {
   grid-row-end: 2;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.five #stars {
+  margin-top: 5%;
+}
+
+.five #stars .fa-star {
+  color: #ff8c00;
+  font-size: 1.3rem;
+  margin: 1%;
 }
 
 footer {
