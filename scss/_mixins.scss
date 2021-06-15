@@ -1,0 +1,65 @@
+@mixin squareButton($background-color){
+    border: none;
+    background-color: $background-color;
+    color: $white;
+    font-weight: bold;
+    padding: 1% 2.5%;
+    text-transform: uppercase;
+    margin: 15px;
+    font-size: 1.3rem;
+
+}
+
+@mixin buttonHover($background-color, $text-color, $border-color) {
+    &:hover{
+        background-color: $background-color;
+        color: $text-color;
+        border: 3px solid $border-color;
+    }
+}
+
+@mixin twoColumnGrid(){
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    width: 100%;
+    .left{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+        align-self: center;
+        padding-left: 25%;
+        padding-right: 15%;
+    }
+    .right{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: end;
+    }
+}
+
+@mixin imgOverlay {
+    .two{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        h2 {
+            position: absolute;
+            top: 30%;
+            right: 50%;
+        }
+    }
+    
+    
+    
+}
+
