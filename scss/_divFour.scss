@@ -5,10 +5,11 @@
         position: absolute;
         top: 50%;
         right: 50%;
-        transform: translate(50%, -50%);
+        transform: translate(110%, -50%);
     }
     button{
         @include squareButton($purple);
-        @include buttonHover(transparent, $white, $white);
+        @include buttonHover(transparent, $purple, $purple);
+        padding: 4% 5%;
     }  
 }

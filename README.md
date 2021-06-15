@@ -74,9 +74,13 @@ These required features are requested specifically by the client and should be i
 If you have any questions please feel free to email me (Matt) at matt.sprague@roostergrin.com
 
 Notes for me:
- - static css done today!
- - custom content and links
- - animation done on 
+ - drop down function
+ - carosel
+ - header animation
+ - slide in animation on body
+ - icon animation
+ - mobile responsive
+ - headless cms
 
  credits
   - css tricks blog
