@@ -467,9 +467,14 @@ footer div div img {
   height: 10px;
   background: #3d3d3d;
   margin: 0 5px;
+  cursor: pointer;
 }
 
 .carousel .carousel-indicator .current-slide {
   background: #f8f8f9;
+}
+
+.carousel .hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

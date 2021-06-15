@@ -62,8 +62,14 @@
         height: 10px;
         background: $grey;
         margin: 0 5px;
-        .current-slide{
-            background: $backgroundAccent
-        }
+        cursor: pointer;
+    }
+
+    .carousel-indicator .current-slide{
+        background: $backgroundAccent
+    }
+
+    .hidden{
+        display: none;
     }
 }
