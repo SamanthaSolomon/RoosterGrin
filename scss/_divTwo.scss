@@ -1,8 +1,5 @@
 .two{
-    width: 100%;
-    position: relative;
-    img{
-        width: 100%;
+    @include wideImgDiv;
     }
     .content-block{
         position: absolute;

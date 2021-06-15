@@ -277,4 +277,38 @@ header img:last-of-type {
   -ms-flex-line-pack: center;
       align-content: center;
 }
+
+.four {
+  width: 100%;
+  position: relative;
+}
+
+.four img {
+  width: 100%;
+}
+
+.four .content-block {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.four button {
+  border: 3px solid #800080;
+  background-color: #800080;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1.5% 2.5%;
+  text-transform: uppercase;
+  margin: 15px;
+  font-size: 1.3rem;
+}
+
+.four button:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
