@@ -1,3 +1,19 @@
 footer{
-    background-color: red;
+    background-color: $backgroundAccent;
+    div{
+        padding: 2%;
+        p{
+            color: $grey;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;  
+          }
+        div{
+            margin-left: 41%;
+            img{
+                width: 65px;
+                padding: 0 1.5% 0 1.5%;
+            }
+        }  
+    }
 }
