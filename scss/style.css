@@ -141,24 +141,6 @@ header img:last-of-type {
       justify-self: end;
 }
 
-.two .two {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.two .two img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.two .two h2 {
-  position: absolute;
-  top: 30%;
-  right: 50%;
-}
-
 .two button {
   border: none;
   background-color: #ff8c00;
@@ -174,5 +156,85 @@ header img:last-of-type {
   background-color: transparent;
   color: #ff8c00;
   border: 3px solid #ff8c00;
+}
+
+.three {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.three .left {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 25%;
+  padding-right: 15%;
+}
+
+.three .right {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.three .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.three .right .icon {
+  margin: 5%;
+  padding: 5%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 16%;
+      flex-basis: 16%;
+}
+
+.three .right .icon p {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.three .right .border {
+  border-color: yellow;
+}
+
+.three .right .border img {
+  width: 100px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 /*# sourceMappingURL=style.css.map */

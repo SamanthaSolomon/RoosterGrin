@@ -1,0 +1,30 @@
+.three{
+    @include twoColumnGrid(center);
+    .right{
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        .icon{
+            margin: 5%;
+            padding: 5%;
+            flex-grow: 1;
+            flex-basis: 16%;
+            p{
+                text-align: center;
+                margin-top: 5%
+            }
+        }
+        .border{
+            border-color: yellow;
+            img{
+                width: 100px;
+                align-content: center;
+            }
+        }
+        
+
+    }
+
+}

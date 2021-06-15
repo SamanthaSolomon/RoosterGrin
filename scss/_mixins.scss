@@ -18,7 +18,7 @@
     }
 }
 
-@mixin twoColumnGrid(){
+@mixin twoColumnGrid($justify-self){
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
@@ -38,28 +38,11 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        justify-self: end;
+        justify-self: $justify-self;
     }
 }
 
-@mixin imgOverlay {
-    .two{
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        img{
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-        h2 {
-            position: absolute;
-            top: 30%;
-            right: 50%;
-        }
-    }
-    
-    
+@mixin imgOverlay() {
     
 }
 
