@@ -1,3 +1,6 @@
 .one{
    @include twoColumnGrid(end);
+   .right img{
+      height: 650px;
+   }
 }

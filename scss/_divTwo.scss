@@ -1,7 +1,19 @@
 .two{
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    .content-block{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-160%, -50%);
+    }
     button{
         @include squareButton($orange);
         @include buttonHover(transparent, $orange, $orange);
+        padding: 4% 5%;
     }
     
 
