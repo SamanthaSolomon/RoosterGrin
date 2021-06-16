@@ -329,7 +329,8 @@ header img:last-of-type {
       grid-template-rows: 1fr;
   width: 100%;
   width: 100%;
-  height: 450px;
+  height: 100%;
+  margin: 10% 0;
 }
 
 .five .left {
@@ -397,7 +398,7 @@ footer div div img {
   position: relative;
   height: 200px;
   width: 500px;
-  margin: 10 auto;
+  margin: auto auto;
 }
 
 .carousel .carousel-track-container {
@@ -421,6 +422,7 @@ footer div div img {
   position: absolute;
   top: 0;
   bottom: 0;
+  width: 100%;
 }
 
 .carousel .carousel-button--left {
@@ -468,10 +470,6 @@ footer div div img {
   background: #3d3d3d;
   margin: 0 5px;
   cursor: pointer;
-}
-
-.carousel .carousel-indicator .current-slide {
-  background: #f8f8f9;
 }
 
 .carousel .hidden {

@@ -1,7 +1,8 @@
 .five{
     @include twoColumnGrid(center);
     width: 100%;
-    height: 450px;
+    height: 100%;
+    margin: 10% 0;
     #stars{
         margin-top: 5%;
         .fa-star{
