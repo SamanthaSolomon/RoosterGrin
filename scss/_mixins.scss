@@ -73,3 +73,14 @@
     }
 }
 
+@mixin fadeIn() {
+    .fade-in{
+        opacity: 0;
+        transition: opacity 800ms ease-in ;
+    }
+
+    .fade-in.appear{
+        opacity: 1;
+    }
+}
+

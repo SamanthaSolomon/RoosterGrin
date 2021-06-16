@@ -1,5 +1,6 @@
 .four{
     @include wideImgDiv();
+    @include fadeIn();
     .content-block{
         width: 35%;
         position: absolute;

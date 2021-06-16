@@ -61,6 +61,16 @@ li {
   font-size: 1rem;
 }
 
+header .fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 800ms ease-in;
+  transition: opacity 800ms ease-in;
+}
+
+header .fade-in.appear {
+  opacity: 1;
+}
+
 header img:first-of-type {
   position: relative;
   width: 100%;
@@ -184,6 +194,16 @@ header img:last-of-type {
 
 .two img {
   width: 100%;
+}
+
+.two .fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 800ms ease-in;
+  transition: opacity 800ms ease-in;
+}
+
+.two .fade-in.appear {
+  opacity: 1;
 }
 
 .two .content-block {
@@ -327,6 +347,16 @@ header img:last-of-type {
 
 .four img {
   width: 100%;
+}
+
+.four .fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 800ms ease-in;
+  transition: opacity 800ms ease-in;
+}
+
+.four .fade-in.appear {
+  opacity: 1;
 }
 
 .four .content-block {
