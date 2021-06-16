@@ -1,6 +1,7 @@
 .three{
     width: 100%;
     @include twoColumnGrid(center);
+    @include slDetails();
     .right{
         background-color: $backgroundAccent;
         width: 100%;

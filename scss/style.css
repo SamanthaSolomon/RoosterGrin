@@ -152,6 +152,25 @@ header img:last-of-type {
       justify-self: end;
 }
 
+.one sl-details::part(summary) {
+  font-family: "Lato";
+  color: #800080;
+  font-weight: bold;
+}
+
+.one sl-details::part(base) {
+  border: none;
+  width: 50%;
+}
+
+.one sl-details::part(summary-icon) {
+  color: #800080;
+}
+
+.one sl-details::part(content) {
+  font-family: "Lato";
+}
+
 .one .right img {
   height: 475px;
   -o-object-fit: cover;
@@ -231,6 +250,25 @@ header img:last-of-type {
   grid-row-end: 2;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.three sl-details::part(summary) {
+  font-family: "Lato";
+  color: #800080;
+  font-weight: bold;
+}
+
+.three sl-details::part(base) {
+  border: none;
+  width: 50%;
+}
+
+.three sl-details::part(summary-icon) {
+  color: #800080;
+}
+
+.three sl-details::part(content) {
+  font-family: "Lato";
 }
 
 .three .right {

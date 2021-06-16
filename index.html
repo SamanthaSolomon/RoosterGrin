@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Rooster Grin Front End Dev Test</title>
-    <!-- 3d-slide-master -->
-    <link rel="stylesheet" href="3d-slider-master/style.css">
+    
+    <!-- Shoelace -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.43/dist/themes/base.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.43/dist/shoelace.js"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/cee7a6045c.js" crossorigin="anonymous"></script>
@@ -43,21 +45,14 @@
       <div class="left">
         <h2>Health starts in the mouth</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolore corrupti quia saepe perspiciatis aliquam unde exercitationem dicta quidem! Nihil aut dolorem quasi doloremque beatae vero fugiat quas asperiores. Asperiores.</p>
-        <button>
-          <i class="fas fa-chevron-down"></i>
-          Our Process
-        </button>
-        <div class="collapse">
-          <div>
-            <ol>
-              <li>Evaluation</li>
-              <li>Treatment plan</li>
-              <li>Cleaning</li>
-              <li>Schedule next visits</li>
-            </ol>
-            
-          </div>
-        </div>
+        <sl-details summary="Our Process">
+          <ol>
+            <li>Evaluation</li>
+            <li>Treatment plan</li>
+            <li>Cleaning</li>
+            <li>Schedule next visits</li>
+          </ol>
+        </sl-details>
       </div>
       <div class="right">
         <img src="front-end-dev-test-assets/img-1.jpg" alt="climbers helping each other">
@@ -78,15 +73,9 @@
       <div class="left">
         <h3>We'll have you smiling</h3> 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est doloribus alias fugit velit quia. Deserunt in dolores officiis aperiam voluptate id ipsa eveniet excepturi accusamus voluptatum. Animi, fugiat laudantium!</p>
-        <button>
-          <i class="fas fa-chevron-down"></i>
-          Lorem ipsum
-        </button>
-        <div class="collapse">
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </div>
-        </div>
+        <sl-details summary="Check this out">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </sl-details>
       </div>
       <div class="right">
           <div class="icon">
@@ -194,10 +183,6 @@
     </footer>
 
     <!-- External JS -->
-<<<<<<< HEAD
-    <script src='3d-slider-master/app.js'></script>
-=======
     <script type="text/javascript" src="JS/carousel.js"></script>
->>>>>>> be0c0732ae9dfd38b13210032ba50a2e3850ee17
   </body>
 </html>

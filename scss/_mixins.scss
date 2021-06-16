@@ -52,3 +52,24 @@
     }
 }
 
+@mixin slDetails() {
+    sl-details::part(summary){
+      font-family: $Lato;
+      color: $purple;
+      font-weight: bold
+    }
+
+   sl-details::part(base){
+      border: none;
+      width: 50%;
+    }
+
+   sl-details::part(summary-icon){
+      color: $purple;
+    }
+
+    sl-details::part(content){
+        font-family: $Lato;
+    }
+}
+
