@@ -1,38 +1,38 @@
-header{
-    @include fadeIn();
+    header{
+        @include fadeIn();
 
-    img:first-of-type{
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-    
-    svg{
-        position: absolute;
-        top: 48%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-transform: uppercase;
-    }
+        img:first-of-type{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        svg{
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+        }
 
-    h1{
-        position: absolute;
-        top: 48%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        h1{
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        button{
+            @include squareButton($purple);
+            @include buttonHover(transparent, $white, $white);
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+        img:last-of-type{
+            position: absolute;
+            top: 5%;
+            left: 13%;
+            max-width: 20%;
+        }
     }
-    button{
-        @include squareButton($purple);
-        @include buttonHover(transparent, $white, $white);
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
-    img:last-of-type{
-        position: absolute;
-        top: 5%;
-        left: 13%;
-        max-width: 20%;
-    }
-}
