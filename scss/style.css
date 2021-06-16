@@ -5,6 +5,7 @@ body {
       align-content: center;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -59,6 +60,16 @@ li {
   font-weight: 400px;
   color: #3d3d3d;
   font-size: 1rem;
+}
+
+header .fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 750ms ease-in;
+  transition: opacity 750ms ease-in;
+}
+
+header .fade-in.appear {
+  opacity: 1;
 }
 
 header img:first-of-type {
@@ -171,6 +182,32 @@ header img:last-of-type {
   font-family: "Lato";
 }
 
+.one .left {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: opacity 250ms ease-in,  -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  transform 400ms ease-in,  -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.one .right {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: opacity 250ms ease-in,  -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  transform 400ms ease-in,  -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.one .left.appear, .one .right.appear {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
 .one .right img {
   height: 475px;
   -o-object-fit: cover;
@@ -184,6 +221,16 @@ header img:last-of-type {
 
 .two img {
   width: 100%;
+}
+
+.two .fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 750ms ease-in;
+  transition: opacity 750ms ease-in;
+}
+
+.two .fade-in.appear {
+  opacity: 1;
 }
 
 .two .content-block {
@@ -271,6 +318,32 @@ header img:last-of-type {
   font-family: "Lato";
 }
 
+.three .left {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: opacity 250ms ease-in,  -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  transform 400ms ease-in,  -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.three .right {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: opacity 250ms ease-in,  -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  transform 400ms ease-in,  -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.three .left.appear, .three .right.appear {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
 .three .right {
   background-color: #f8f8f9;
   width: 100%;
@@ -312,6 +385,15 @@ header img:last-of-type {
   border: 2px solid #800080;
   border-radius: 90px;
   padding: 20px;
+  position: relative;
+  -webkit-transition-property: border-radius;
+  transition-property: border-radius;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
+}
+
+.three .right .icon .border:hover {
+  border-radius: 20px;
 }
 
 .three .right .icon .border img {
@@ -327,6 +409,16 @@ header img:last-of-type {
 
 .four img {
   width: 100%;
+}
+
+.four .fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 750ms ease-in;
+  transition: opacity 750ms ease-in;
+}
+
+.four .fade-in.appear {
+  opacity: 1;
 }
 
 .four .content-block {
@@ -396,6 +488,32 @@ header img:last-of-type {
   grid-row-end: 2;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.five .left {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: opacity 250ms ease-in,  -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  transform 400ms ease-in,  -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.five .right {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: opacity 250ms ease-in,  -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  transform 400ms ease-in;
+  transition: opacity 250ms ease-in,  transform 400ms ease-in,  -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.five .left.appear, .five .right.appear {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 .five #stars {

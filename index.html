@@ -23,8 +23,9 @@
     <header>
       <img src="front-end-dev-test-assets/hero.jpg" alt="photo of San Franscisco Bay Bridge">
       <img src="front-end-dev-test-assets/logo-white.svg" alt="RoosterGrin logo">
-      <svg viewbox="0 0 10 2">
-        <text x="5" y="1" 
+      <div class="fade-in">
+        <svg viewbox="0 0 10 2">
+          <text x="5" y="1" 
           text-anchor="middle" 
           font-size="0.8" 
           fill="none" 
@@ -33,16 +34,17 @@
           font-family="Lato"
           letter-spacing="-0.04">
           Welcome To
-        </text>
-      </svg>
-      <h1>Rooster Grin</h1>
-      <a href="https://www.baltimorewaterfrontdental.com/services/general-dentistry" target="_blank">
+          </text>
+        </svg>
+        <h1>Rooster Grin</h1>
+        <a href="https://www.baltimorewaterfrontdental.com/services/general-dentistry" target="_blank">
         <button>Dentistry to Make You Smile</button>
-      </a>
+        </a>
+      </div>
     </header>
 
     <div class="one">
-      <div class="left">
+      <div class="left slide-in">
         <h2>Health starts in the mouth</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolore corrupti quia saepe perspiciatis aliquam unde exercitationem dicta quidem! Nihil aut dolorem quasi doloremque beatae vero fugiat quas asperiores. Asperiores.</p>
         <sl-details summary="Our Process">
@@ -54,14 +56,14 @@
           </ol>
         </sl-details>
       </div>
-      <div class="right">
+      <div class="right slide-in">
         <img src="front-end-dev-test-assets/img-1.jpg" alt="climbers helping each other">
       </div>
     </div>
 
     <div class="two">
       <img src="front-end-dev-test-assets/banner-1.jpg" alt="parent with child and laptop">
-      <div class="content-block">
+      <div class="content-block fade-in">
         <h2>Serivces for the whole family</h2>
         <a href="https://www.baltimorewaterfrontdental.com/contact" target="_blank">
           <button>Contact Us Today</button>
@@ -70,14 +72,14 @@
     </div>
 
     <div class="three">
-      <div class="left">
+      <div class="left slide-in">
         <h3>We'll have you smiling</h3> 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est doloribus alias fugit velit quia. Deserunt in dolores officiis aperiam voluptate id ipsa eveniet excepturi accusamus voluptatum. Animi, fugiat laudantium!</p>
         <sl-details summary="Check this out">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </sl-details>
       </div>
-      <div class="right">
+      <div class="right slide-in">
           <div class="icon">
             <div class="border" style="width: 104px">
               <img src="front-end-dev-test-assets/home-expertise.svg" alt="paper and pen icon">
@@ -107,7 +109,7 @@
 
     <div class="four">
       <img src="front-end-dev-test-assets/banner-2.jpg">
-      <div class="content-block">
+      <div class="content-block fade-in">
         <h2>Special Prices for Kids!</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea doloremque libero illum perspiciatis amet impedit quos! Repellat, officiis. Nemo numquam quaerat architecto accusamus suscipit atque. Ea voluptatibus nemo vitae quaerat.</p>
         <a href="https://www.baltimorewaterfrontdental.com/about" target="_blank">
@@ -117,7 +119,7 @@
     </div>
 
     <div class="five">
-      <div class="left">
+      <div class="left slide-in">
         <h3>Clients give us top marks</h3>
         <div id="stars"> 
           <i class="fas fa-star"></i>
@@ -128,7 +130,7 @@
         </div>
       </div>
 
-      <div class="right">
+      <div class="right slide-in">
           <div class="carousel">
             <button class="carousel-button--left hidden">
               <i class="fas fa-chevron-left"></i>
@@ -183,6 +185,7 @@
     </footer>
 
     <!-- External JS -->
-    <script type="text/javascript" src="JS/carousel.js"></script>
+    <script src="JS/carousel.js"></script>
+    <script src="JS/observers.js"></script>
   </body>
 </html>

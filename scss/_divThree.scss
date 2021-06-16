@@ -2,6 +2,7 @@
     width: 100%;
     @include twoColumnGrid(center);
     @include slDetails();
+    @include slideIn();
     .right{
         background-color: $backgroundAccent;
         width: 100%;
@@ -25,6 +26,12 @@
                 border: 2px solid $purple;
                 border-radius: 90px;
                 padding: 20px;
+                position: relative;
+                transition-property: border-radius;
+                transition-duration: 100ms;
+                &:hover{
+                    border-radius: 20px;
+                }
                 img{
                     width: 100px;
                     align-content: center;

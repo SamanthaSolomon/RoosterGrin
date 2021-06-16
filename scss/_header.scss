@@ -1,4 +1,6 @@
 header{
+    @include fadeIn();
+
     img:first-of-type{
         position: relative;
         width: 100%;

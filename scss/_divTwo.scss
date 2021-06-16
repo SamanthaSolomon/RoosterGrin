@@ -1,5 +1,6 @@
 .two{
     @include wideImgDiv;
+    @include fadeIn;
     .content-block{
         position: absolute;
         top: 50%;

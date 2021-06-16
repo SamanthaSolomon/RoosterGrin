@@ -73,3 +73,37 @@
     }
 }
 
+@mixin fadeIn() {
+    .fade-in{
+        opacity: 0;
+        transition: opacity 750ms ease-in ;
+    }
+
+    .fade-in.appear{
+        opacity: 1;
+    }
+}
+
+@mixin slideIn() {
+    .left{
+        transform: translateX(-50%);
+        transition: 
+           opacity 250ms ease-in, 
+           transform 400ms ease-in;
+        opacity: 0;
+     }
+  
+     .right{
+        transform: translateX(50%);
+        transition: 
+           opacity 250ms ease-in, 
+           transform 400ms ease-in;
+        opacity: 0;
+     }
+  
+     .left.appear, .right.appear{
+        transform: translateX(0);
+        opacity: 1;
+     }
+}
+
