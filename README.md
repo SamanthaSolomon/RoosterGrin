@@ -84,6 +84,7 @@ Notes for me:
 
  credits
   - css tricks blog
+  - Kevin Powell, blogger and youtuber 
 
 new things
 creating an svg for the welcome to text to achieve the transparent effect
