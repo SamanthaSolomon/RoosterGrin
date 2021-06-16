@@ -1,6 +1,8 @@
 .one{
    @include twoColumnGrid(end);
    @include slDetails();
+   @include slideIn();
+   
    .right img{
       height: 475px;
       object-fit: cover;

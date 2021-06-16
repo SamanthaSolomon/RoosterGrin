@@ -2,6 +2,7 @@
     width: 100%;
     @include twoColumnGrid(center);
     @include slDetails();
+    @include slideIn();
     .right{
         background-color: $backgroundAccent;
         width: 100%;
