@@ -138,30 +138,45 @@
           <i class="fas fa-star"></i>
         </div>
       </div>
+
       <div class="right">
-        <div class="container">
-          <div class="button" onclick="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt=""></div>
-          <div class="cards-wrapper">
-              <ul class="cards__container">
-                  <li class="box">
+          <div class="carousel">
+            <button class="carousel-button--left hidden">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carousel-track-container">
+              <ul class="carousel-track">
+                <li class="carousel-slide current-slide">
+                  <div class="slide-content">
                     <h4>John Doe 08/08/2019</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore ab voluptates assumenda odit, nesciunt porro reiciendis? Omnis, nemo animi tempora aperiam iure cumque, numquam obcaecati labore laboriosam temporibus quibusdam laborum!</p>
-                  </li>
-                  <li class="box">
+                  </div>
+                </li>
+                <li class="carousel-slide">
+                  <div class="slide-content">
                     <h4>Jane Doe 09/12/2020</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore ab voluptates assumenda odit, nesciunt porro reiciendis? Omnis, nemo animi tempora aperiam iure cumque, numquam obcaecati labore laboriosam temporibus quibusdam laborum!</p>
-                  </li>
-                  <li class="box">
+                  </div>
+                </li>
+                <li class="carousel-slide">
+                  <div class="slide-content">
                     <h4>Janelle Doe 12/05/2018</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore ab voluptates assumenda odit, nesciunt porro reiciendis? Omnis, nemo animi tempora aperiam iure cumque, numquam obcaecati labore laboriosam temporibus quibusdam laborum!</p>
-                  </li>
+                  </div>
+                </li>
               </ul>
             </div>
-          <div class="button" onclick="shiftRight()">
-            <img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt="">
+            <button class="carousel-button--right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="carousel-nav">
+              <button class="carousel-indicator current-slide"></button>
+              <button class="carousel-indicator"></button>
+              <button class="carousel-indicator"></button>
+            </div>
           </div>
         </div>
-      </div>
+
     </div>
 
     <footer>
@@ -179,6 +194,6 @@
     </footer>
 
     <!-- External JS -->
-    <script src='3d-slider-master/app.js'></script>
+    <script type="text/javascript" src="JS/carousel.js"></script>
   </body>
 </html>

@@ -2,5 +2,6 @@
    @include twoColumnGrid(end);
    .right img{
       height: 475px;
+      object-fit: cover;
    }
 }
