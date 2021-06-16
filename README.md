@@ -74,10 +74,6 @@ These required features are requested specifically by the client and should be i
 If you have any questions please feel free to email me (Matt) at matt.sprague@roostergrin.com
 
 Notes for me:
- - drop down function - library!
- - carosel - library!
- - header animation
- - slide in animation on body
  - icon animation
  - mobile responsive
  - headless cms
